@@ -21,6 +21,7 @@ const Form = ({ inputText, setInputText, setTodos, todos, status, setStatus  }) 
 
     return(
         <form className="form" id="form">
+
             <input  value ={ inputText } type = "text"  onChange = { inputTextHandler } />
             <button onClick ={ submitTodoHandler } type = "submit">add a todo</button>
 
@@ -31,6 +32,7 @@ const Form = ({ inputText, setInputText, setTodos, todos, status, setStatus  }) 
                     <option value = "uncompleted">Uncompleted</option>
                 </select>   
             </div>
+            
         </form>
 
     )

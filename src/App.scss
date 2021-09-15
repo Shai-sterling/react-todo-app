@@ -24,11 +24,6 @@ body {
     padding: 20px;
 }
 
-
-
-
-
-
 .todo-n-button {
     display: flex;
     justify-content: space-between;
@@ -37,8 +32,6 @@ body {
     padding: 10px;
     font-size: 22px;
     color: white;
-
-
 
     .todo-item {
         list-style: none;
@@ -69,8 +62,6 @@ form {
         padding: 5px;
     }
 }
-
-
 
 .completed {
     color: rgb(170, 170, 170);

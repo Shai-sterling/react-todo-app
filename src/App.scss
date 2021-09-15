@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(#021E45, #185a9d);
+
+}
+
+.App {
+    width: 50%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: center;
+}
+
+    
+.todo-title {
+    color: white;
+    padding: 20px;
+}
+
+
+
+
+
+
+.todo-n-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 22px;
+    color: white;
+
+
+
+    .todo-item {
+        list-style: none;
+        width: 60%;
+    } 
+
+    button {
+        width: auto;
+        padding: 10px;
+        margin-left: 4px;
+    }
+} 
+
+
+
+form {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+
+    input{
+        padding: 5px;
+        width: 80%;
+
+    }
+    
+    select {
+        padding: 5px;
+    }
+}
+
+
+
+.completed {
+    color: rgb(170, 170, 170);
+    text-decoration: line-through;
+}

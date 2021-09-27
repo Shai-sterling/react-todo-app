@@ -54,25 +54,16 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App" style={{}}>
 
-      <div className="todo-title">
         <h1>Shai's Todo App </h1>
         <p>Typing: { inputText }</p>
-      </div>
 
-      <div className="todo-form">
+
 
         <Form todos = { todos } setTodos = { setTodos } inputText = { inputText } setInputText = { setInputText }  status = { status }  setStatus = { setStatus } />
-
-        <div className="">
-          <TodoList todos = { todos }  setTodos = { setTodos }  filterTodos = {filterTodos }/>
-        </div>
-
-      </div>
-
+        <TodoList todos = { todos }  setTodos = { setTodos }  filterTodos = {filterTodos }/>
       
-
     </div>
   );
 }

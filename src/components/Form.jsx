@@ -20,13 +20,13 @@ const Form = ({ inputText, setInputText, setTodos, todos, status, setStatus  }) 
     }
 
     return(
-        <form className="form" id="form">
+        <form className="todo-form" id="todo-form">
 
-            <input  value ={ inputText } type = "text"  onChange = { inputTextHandler } />
-            <button onClick ={ submitTodoHandler } type = "submit">add a todo</button>
+            <input  value = { inputText } type = "text"  onChange = { inputTextHandler } />
+            <button onClick = { submitTodoHandler } type = "submit">add a todo</button>
 
             <div className = "form-selection" id = "form-selection" >
-                <select onChange = { statusHandler } name = "" id = "">
+                <select onChange = { statusHandler } >
                     <option value="all">All</option>
                     <option value = "completed">Completed</option>
                     <option value = "uncompleted">Uncompleted</option>

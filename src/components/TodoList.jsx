@@ -5,11 +5,11 @@ const TodoList = ({ todos, setTodos, filterTodos }) => {
     const todoItems = filterTodos.map( todo => <Todo key={todo.id} todo = { todo } setTodos = { setTodos } todos ={ todos } filterTodos = { filterTodos } /> )
     
     return (
-        <div className="todo-items">
-            <ul>
+        
+            <ul className="todo-items">
                 { todoItems }
             </ul>
-        </div>
+    
     )
 
 }

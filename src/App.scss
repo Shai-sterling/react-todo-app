@@ -3,65 +3,90 @@
     padding: 0;
 }
 
-body {
-    background: linear-gradient(#021E45, #185a9d);
 
-}
 
 .App {
-    width: 50%;
-    margin: auto;
-    height: 100vh;
+    background:#453902;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     text-align: center;
-}
+    padding: 40px;
 
     
-.todo-title {
-    color: white;
-    padding: 20px;
-}
 
-.todo-n-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    font-size: 22px;
-    color: white;
+    .todo-form{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
 
-    .todo-item {
+
+        input {
+            width: 30%;
+            padding: 5px;
+        }
+        button {
+            padding: 10px;
+            margin-left: 10px;
+
+        }
+
+        select {
+            padding: 10px;
+            text-align: center;
+            margin-left: 40px;
+
+        }
+    }
+
+
+
+    ul {
+
         list-style: none;
-        width: 60%;
-    } 
-
-    button {
-        width: auto;
-        padding: 10px;
-        margin-left: 4px;
+       
+        
     }
-} 
 
 
 
-form {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
 
-    input{
-        padding: 5px;
-        width: 80%;
+    .todo-n-btns {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        margin-top: 20px;
+        width: 50%;
+        margin-left:auto ;
+        margin-right: auto;
+        text-align: start;
+        height: auto;
 
+        li {
+            padding: 3px;
+            width: 80%;
+            max-height: 50px;
+        }
+        button {
+            padding: 5px;
+            margin-left: 4px;
+        }
     }
-    
-    select {
-        padding: 5px;
+
+
+
+
+    .item-btns{
+        display: flex;
+        justify-content: space-around;
     }
+
 }
+
+ 
+
+
 
 .completed {
     color: rgb(170, 170, 170);

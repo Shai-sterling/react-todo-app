@@ -14,14 +14,15 @@ const Todo = ({ todo, setTodos, todos, filterTodos}) => {
             return item
         }))
     } 
-    return(
-        <div className="todo-n-button">
-            <li className= {`todo-item ${todo.completed  ? "completed" : " "} `}>{todo.text}</li>
-            <div>
-                <button onClick={deleteTodoHandler}>delete</button>
-                <button onClick={completedHandler}>Done</button>
-            </div>
-      
+    return (
+        <div className="todo-n-btns">
+
+            <li className= {`${todo.completed  ? "completed" : " "} `}>{todo.text}</li>
+
+            <div className="item-btns">
+            <button onClick={deleteTodoHandler}>delete</button>
+            <button onClick={completedHandler}>Done</button>
+            </div>   
         </div>
     )
 }
